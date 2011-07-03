@@ -1,0 +1,35 @@
+VertexLitGeneric
+{
+	$baseTexture "models\w_models\eq_painpills\w_eq_painpills"
+
+    "$offset" "0"
+    "$selfillum" "1"
+	"$selfillumtint" "[1 1 1]"
+
+	Proxies
+	{
+        "EntityRandom"
+        {
+            "scale" "4"
+            "resultVar" "$offset"
+        }
+        "Sine"
+        {
+            "sineperiod" 1
+            "timeoffset" "$offset"
+            "resultVar" "$selfillumtint[0]"
+        }
+        "Sine"
+        {
+            "sineperiod" 2
+            "timeoffset" "$offset"
+            "resultVar" "$selfillumtint[1]"
+        }
+        "Sine"
+        {
+            "sineperiod" 4
+            "timeoffset" "$offset"
+            "resultVar" "$selfillumtint[2]"
+        }
+	}
+}
