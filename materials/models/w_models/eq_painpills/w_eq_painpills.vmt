@@ -1,35 +1,41 @@
 VertexLitGeneric
 {
-	$baseTexture "models\w_models\eq_painpills\w_eq_painpills"
+  $baseTexture "models\w_models\eq_painpills\w_eq_painpills"
 
-    "$offset" "0"
-    "$selfillum" "1"
-	"$selfillumtint" "[1 1 1]"
+  "$offset" "0"
+  "$selfillum" "1"
+  "$selfillumtint" "[1 1 1]"
 
-	Proxies
-	{
-        "EntityRandom"
-        {
-            "scale" "4"
-            "resultVar" "$offset"
-        }
-        "Sine"
-        {
-            "sineperiod" 1
-            "timeoffset" "$offset"
-            "resultVar" "$selfillumtint[0]"
-        }
-        "Sine"
-        {
-            "sineperiod" 2
-            "timeoffset" "$offset"
-            "resultVar" "$selfillumtint[1]"
-        }
-        "Sine"
-        {
-            "sineperiod" 4
-            "timeoffset" "$offset"
-            "resultVar" "$selfillumtint[2]"
-        }
-	}
+  Proxies
+  {
+    "EntityRandom"
+    {
+      "scale" "4"
+      "resultVar" "$offset"
+    }
+    "Sine"
+    {
+      "sineperiod" 0.25
+      "sinemin" "0.0"
+      "sinemax" "1.0"
+      "timeoffset" "$offset"
+      "resultVar" "$selfillumtint[0]"
+    }
+    "Sine"
+    {
+      "sineperiod" 0.5
+      "sinemin" "0.0"
+      "sinemax" "1.0"
+      "timeoffset" "$offset"
+      "resultVar" "$selfillumtint[1]"
+    }
+    "Sine"
+    {
+      "sineperiod" 1
+      "sinemin" "0.0"
+      "sinemax" "1.0"
+      "timeoffset" "$offset"
+      "resultVar" "$selfillumtint[2]"
+    }
+  }
 }

@@ -1,7 +1,7 @@
 "AddonInfo"
 {
 addontitle "rainbow pills" // Add-on title that shows up in Add-ons list. ~20 chars max
-addonversion 1.0 // Add-on version.
+addonversion 1.1 // Add-on version.
 addontagline "" // Add-on tagline or wrap-up- a short description. ~100 chars max
 addonauthor "kimoto" // Name/alias of the author
 addonauthorSteamID "kimoto" // Steam Profile URL of author or group
