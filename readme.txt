@@ -1,7 +1,8 @@
 rainbow_pills.vpk:
-	Colorful growing painpills.
+	Colorful glowing painpills.
 
 Version:
+  1.2: Refactoring
   1.1: More fast flashing (x4 faster)
   1.0: First Release
 

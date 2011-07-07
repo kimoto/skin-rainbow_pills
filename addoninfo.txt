@@ -1,29 +1,27 @@
 "AddonInfo"
 {
-addontitle "rainbow pills" // Add-on title that shows up in Add-ons list. ~20 chars max
-addonversion 1.1 // Add-on version.
-addontagline "" // Add-on tagline or wrap-up- a short description. ~100 chars max
-addonauthor "kimoto" // Name/alias of the author
-addonauthorSteamID "kimoto" // Steam Profile URL of author or group
-addonContent_Campaign 0 //This addon provides muliple connected maps with a finale
-addonDescription "rainbow pills"
-addonDescription_FR ""
+  addontitle "RainbowPills"
+  addonversion 1.2
+  addontagline ""
+  addonauthor "kimoto"
+  addonauthorSteamID "kimoto"
+  addonContent_Campaign 0
+  addonDescription "Colorful Glowing PainPills"
+  addonDescription_FR ""
 
+  addonContent_Script 0
+  addonContent_Music 0
+  addonContent_Sound 0
+  addonContent_prop 0
+  addonContent_Prefab 0
 
-addonContent_Script 0
-addonContent_Music 0
-addonContent_Sound 0
-addonContent_prop 0 //This Add-on provides new props,
-addonContent_Prefab 0 //Provides new prefabs
-
-addonContent_BackgroundMovie 0 //Provides a replacement for the background movie.
-addonContent_Survivor 0 //Provides a new survivor model. 0=false, 1=true, String in quotes if replaces specific single character, i.e. "Francis"
-addonContent_BossInfected 0 //Provides a new boss infected model. Break these out?
-addonContent_CommonInfected 0 //Provides a new common infected model
-addonContent_WeaponModel 0 //Provides a new appearance to existing weapons, but does not change their function
-addonContent_weapon 0 //provides new weapons or new zombie killing functionality, i.e. guns, explosives, booby traps, hot tar,
-addonContent_Skin 1 //0 if no new skin textures for existing models. 1 if multiple skin pack. String in quotes if specific single skin
-addonContent_Spray 0 //Provides new sprays.
-addonContent_Map 0 //Add-on provides a standalone map
-
+  addonContent_BackgroundMovie 0
+  addonContent_Survivor 0 
+  addonContent_BossInfected 0 
+  addonContent_CommonInfected 0
+  addonContent_WeaponModel 0
+  addonContent_weapon 0
+  addonContent_Skin 1
+  addonContent_Spray 0
+  addonContent_Map 0
 }
