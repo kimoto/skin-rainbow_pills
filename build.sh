@@ -10,7 +10,7 @@ set -x
 vpk.exe "../skin-${PACKAGE_NAME}"
 cp "../skin-${PACKAGE_NAME}.vpk" "${D2_ADDON_PATH}/${PACKAGE_NAME}.vpk"
 
-if [ "$1" == "--run" ]; then
+if [ "$2" == "--run" ]; then
   cygstart steam://run/550
 fi
 
