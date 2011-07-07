@@ -7,10 +7,12 @@ if [ "$PACKAGE_NAME" == "" ]; then
 fi
 
 set -x
-CURDIR=`basename \`pwd\``
-PACKAGEDIR="./$PACKAGE_NAME.zip"
-cd ../
 
-zip --exclude "*.git*" --exclude "*.sh*" -r "$PACKAGEDIR" "./$CURDIR"
-mv "$PACKAGEDIR" "$HOME/Desktop/"
+mkdir $PACKAGE_NAME
+cp ./readme.txt ./${PACKAGE_NAME}/
+cp "${D2_ADDON_PATH}/${PACKAGE_NAME}.vpk" ./${PACKAGE_NAME}/
+
+zip -r $PACKAGE_NAME.zip $PACKAGE_NAME/
+mv $PACKAGE_NAME.zip $HOME/Desktop/
+rm -r $PACKAGE_NAME/
 
